@@ -1,0 +1,46 @@
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+
+
+/* styling for links elemnts */
+.gpt3__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    /* styling for logo */
+.gpt3__navbar-links_logo {
+    margin-right: 2rem;
+}
+.gpt3__navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+
+    /* styling for links elements */
+.gpt3__navbar-links_elements ul {
+    display: flex;
+}
+.gpt3__navbar-links_elements ul li {
+    color: #FFFFFF;
+
+    list-style: none;
+    margin: 0 1rem;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+}
