@@ -18,7 +18,7 @@
 
     /* styling for logo */
 .gpt3__navbar-links_logo {
-    margin-right: 2rem;
+    margin-right: 5rem;
 }
 .gpt3__navbar-links_logo img {
     width: 62.56px;
@@ -26,16 +26,13 @@
 }
 
 
-    /* styling for links elements */
-.gpt3__navbar-links_elements ul {
-    display: flex;
-}
-.gpt3__navbar-links_elements ul li {
+/* style for links and sing */
+.gpt3__navbar-links_elements ul li,
+.gpt3__navbar-sing p,
+.gpt3__navbar-sing button,
+.gpt3__navbar-menu_contaner,
+.gpt3__navbar-menu_contaner-links_sing button {
     color: #FFFFFF;
-
-    list-style: none;
-    margin: 0 1rem;
-    cursor: pointer;
 
     font-family: var(--font-family);
     font-style: normal;
@@ -43,4 +40,142 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
+
+    cursor: pointer;
+}
+
+    /* styling for links elements */
+.gpt3__navbar-links_elements ul {
+    display: flex;
+}
+.gpt3__navbar-links_elements ul li {
+    list-style: none;
+    margin: 0 1rem;
+
+    opacity: .8;
+    transition: all 0.3s ease-in-out;
+}
+
+.gpt3__navbar-links_elements ul li:hover {
+    opacity: 1;
+}
+
+    /* Styling for Sing-in/up */
+.gpt3__navbar-sing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gpt3__navbar-sing p {
+    opacity: .8;
+}
+
+.gpt3__navbar-sing p:hover {
+    opacity: 1;
+}
+
+
+.gpt3__navbar-sing button,
+.gpt3__navbar-menu_contaner-links_sing button {
+    background: #FF4820;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    opacity: .8;
+    transition: all .3s ease-in-out;
+}
+
+.gpt3__navbar-sing button:hover {
+    opacity: 1;
+}
+
+
+    /* styling for menu mobile. */
+
+.gpt3__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+    inset: 0;
+}
+
+.gpt3__navbar-menu svg {
+    cursor: pointer;
+}
+
+.gpt3__navbar-menu_contaner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-footer);
+    text-align: end;
+    
+    padding: 2rem;
+    margin-top: 1rem;
+    min-width: 210px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, .2);
+
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.gpt3__navbar-menu_contaner ul li {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.gpt3__navbar-menu_contaner-links_sing {
+    display: none;
+}
+
+.gpt3__navbar-menu_contaner-links_sing button {
+    margin-top: 1rem;
+}
+
+/** Creat Media querys for all navbar **/
+
+@media screen and (max-width: 1050px) {
+    .gpt3__navbar-links_elements {
+        display: none;
+    }
+
+    .gpt3__navbar-menu {
+        display: flex;
+
+        margin-left: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .gpt3__navbar {
+        padding: 2rem 4rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__navbar {
+        padding: 2rem;
+    }
+    .gpt3__navbar-sing {
+        display: none;
+    }
+
+    .gpt3__navbar-menu_contaner {
+        top: 20px;
+    }
+
+    .gpt3__navbar-menu_contaner-links_sing {
+        display: block;
+    }
 }
