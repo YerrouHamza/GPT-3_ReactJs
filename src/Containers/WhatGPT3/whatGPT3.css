@@ -1,0 +1,226 @@
+.gpt3__whatgpt3 {
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem;
+    background: var(--color-Footer);
+    
+    
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 100% 100%, rgba(67, 90, 133, 1) 0%, rgba(0, 40, 83, 1) 23%, rgba(0, 40, 83, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 100%, rgba(67, 90, 133, 1) 0%, rgba(0, 40, 83, 1) 23%, rgba(0, 40, 83, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 100%, rgba(67, 90, 133, 1) 0%, rgba(0, 40, 83, 1) 23%, rgba(0, 40, 83, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 100%, rgba(67, 90, 133, 1) 0%, rgba(0, 40, 83, 1) 23%, rgba(0, 40, 83, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 100%, rgba(67, 90, 133, 1) 0%, rgba(0, 40, 83, 1) 23%, rgba(0, 40, 83, 1) 100%);
+}
+
+
+/* styling for the first feature */
+.gpt3__whatgpt3-feature {
+    display: flex;
+    margin-bottom: 2rem;
+}
+    /* styling for feature from feature component parent */
+.gpt3__whatgpt3-feature .gpt3__features-container__feature {
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin: 0;
+}
+
+.gpt3__whatgpt3-feature  .gpt3__features-container {
+    width: 100%;
+}
+
+.gpt3__whatgpt3-feature .gpt3__features-container__feature-text {
+    max-width: 700px;
+}
+
+
+
+/* styling for the center container */
+.gpt3__whatgpt3-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 2rem 0;
+}
+
+.gpt3__whatgpt3-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+
+    max-width: 510px;
+}
+
+.gpt3__whatgpt3-heading a {
+    color: #FF8A71;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+/* styling for featuers container */
+.gpt3__whatgpt3-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__whatgpt3-container .gpt3__features-container__feature {
+    margin-right: 2rem;
+    flex-direction: column;
+    max-width: 310px;
+}
+
+
+
+@media screen and (max-width: 1050px ) {
+
+    .gpt3__whatgpt3 {
+        padding: 3rem;
+    }
+
+        /* styling for feature from feature component parent */
+    .gpt3__whatgpt3-feature .gpt3__features-container__feature {
+        flex-wrap: wrap;
+    }
+
+    .gpt3__whatgpt3-feature .gpt3__features-container__feature-text {
+        max-width: 500px;
+    }
+
+    .gpt3__whatgpt3-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gpt3__whatgpt3-container .gpt3__features-container__feature-text p {
+        max-width: 1000px;
+    }
+}
+
+
+@media screen and (max-width: 900px ) {
+
+    .gpt3__whatgpt3 {
+        padding: 2rem;
+    }
+
+/* styling for feature from feature component parent */
+    .gpt3__whatgpt3-feature .gpt3__features-container__feature {
+        flex-wrap: wrap;
+    }
+
+
+    /* styling for first feature */
+    .gpt3__whatgpt3-feature .gpt3__features-container__feature-title {
+        width: 100%;
+    }
+
+    .gpt3__whatgpt3-feature .gpt3__features-container__feature-text {
+        max-width: 100%;
+    }
+
+
+    /* styling for center feature */
+    .gpt3__whatgpt3-heading h1 {
+        font-size: 29px;
+        max-width: 433px;
+    }
+
+    .gpt3__whatgpt3-heading a {
+        font-size: 14px;
+    }
+    
+    /* styling for last feature */
+    .gpt3__whatgpt3-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .gpt3__whatgpt3-container .gpt3__features-container__feature {
+        max-width: 100%;
+    }
+    
+    .gpt3__whatgpt3-container .gpt3__features-container__feature-text {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 700px ) {
+
+/* styling for feature from feature component parent */
+    .gpt3__features-container__feature-title h1 {
+        font-size: 16px;
+    }
+
+    .gpt3__features-container__feature-text p {
+        font-size: 12;
+    }
+    /* styling for first feature */
+
+    /* styling for center feature */
+    .gpt3__whatgpt3-heading h1 {
+        font-size: 20px;
+        max-width: 300px;
+    }
+
+    .gpt3__whatgpt3-heading a {
+        font-size: 12px;
+    }
+    
+}
+
+
+@media screen and (max-width: 550px ) {
+    .gpt3__whatgpt3 {
+        padding: 2rem 1rem;
+    }
+
+    /* styling for feature from feature component parent */
+    .gpt3__features-container__feature-title h1 {
+        font-size: 14px;
+    }
+
+    .gpt3__features-container__feature-text p {
+        font-size: 12;
+    }
+    /* styling for first feature */
+
+    /* styling for center feature */
+
+    .gpt3__whatgpt3-heading {
+        margin: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    .gpt3__whatgpt3-heading h1 {
+        width: 100%;
+        font-size: 22px;
+        max-width: 100%;
+        line-height: 25px;
+        margin-bottom: 1rem;
+    }
+
+    .gpt3__whatgpt3-heading a {
+        font-size: 12px;
+    }
+        
+}

@@ -85,12 +85,12 @@
     border: none;
     outline: none;
 
-    opacity: .8;
+    opacity: 1;
     transition: all .3s ease-in-out;
 }
 
 .gpt3__navbar-sing button:hover {
-    opacity: 1;
+    opacity: .8;
 }
 
 
@@ -138,6 +138,7 @@
 .gpt3__navbar-menu_contaner-links_sing button {
     margin-top: 1rem;
 }
+
 
 /** Creat Media querys for all navbar **/
 

@@ -1,0 +1,260 @@
+
+/* styling for all */
+.gpt3__header {
+    width: 100%;
+    display: flex;
+}
+
+
+.gbt3__header-contaner {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+    /* styling for title */
+.gbt3__header-contaner h1{
+    flex: 1;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+    margin-bottom: 2rem;
+}
+
+    /* styling for text */
+.gbt3__header-contaner p{
+    flex: 1;
+    color: #81AFDD;
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    
+    margin-bottom: 1rem;
+}
+
+
+/* styling for Form Input */
+.gbt3__header-contaner__form {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gbt3__header-contaner__form input {
+    flex: 2;
+    
+    width: 100%;
+    min-height: 4rem;
+    
+    color: #3D6184;
+    background: #052D56;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 27px;
+        
+    padding-left: 1rem;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    outline: none;
+}
+
+
+.gbt3__header-contaner__form button {
+    flex: .5;
+    
+    width: 100%;
+    min-height: 4rem;
+    
+    color: #FFFFFF;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    cursor: pointer;
+}
+
+.gbt3__header-contaner__form button:hover {
+    opacity: .8;
+}
+
+
+/* styling for people */
+.gbt3__header-contaner__people{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.gbt3__header-contaner__people img{
+    width: 181.79px;
+    height: 38px;
+}
+
+.gbt3__header-contaner__people p{
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+
+    margin: 0;
+    margin-left: .5rem;
+    
+    text-align: start;
+}
+
+
+/* styling for main picture */
+.gbt3__header-air {
+    flex: 1.5;
+}
+
+.gbt3__header-air img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/** Creat Media querys for all Header **/
+@media screen and (max-width: 1050px) { /* 1050px */
+    .gpt3__header {
+        flex-direction: column;
+    }
+
+    /* styling for text */
+    .gbt3__header-contaner p{
+        margin-bottom: 2rem;
+    }
+
+    /* styling for people */
+    .gbt3__header-contaner__people p{
+        margin: 0 0 0 1rem;
+    }
+
+    /* styling for main picture */
+    .gbt3__header-air {
+        margin-top: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 700px) { /* 700px */
+    .gpt3__header {
+        flex-direction: column;
+    }
+
+    /* styling for title */
+    .gbt3__header-contaner h1{
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    /* styling for text */
+    .gbt3__header-contaner p{
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+
+
+    /* styling for Form Input */
+    .gbt3__header-contaner__form input {
+        min-height: 3rem;
+        font-size: 14px;
+    }
+    
+    
+    .gbt3__header-contaner__form button {
+        min-height: 3rem;
+        font-size: 14px;
+    }
+
+
+    /* styling for people */
+    .gbt3__header-contaner__people img{
+        width: 130px;
+        height: 38px;
+    }
+    .gbt3__header-contaner__people p{
+        margin: 0 0 0 .5rem;
+        font-size: 12px;
+    }
+
+    /* styling for main picture */
+    .gbt3__header-air {
+        margin-top: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 550px) { /* 550px */
+    .gpt3__header {
+        flex-direction: column;
+    }
+
+    /* styling for title */
+    .gbt3__header-contaner h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* styling for text */
+    .gbt3__header-contaner p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+
+    /* styling for Form Input */
+    .gbt3__header-contaner__form input {
+        font-size: 12px;
+    }
+    
+    
+    .gbt3__header-contaner__form button {
+        flex: 1;
+        font-size: 12px;
+    }
+
+
+    /* styling for people */
+    .gbt3__header-contaner__people{
+        flex-direction: column;
+    }
+
+    .gbt3__header-contaner__people img{
+        width: 120px;
+        height: 38px;
+    }
+
+    .gbt3__header-contaner__people p{
+        margin: 0 0 0 .5rem;
+        font-size: 11px;
+    }
+
+    /* styling for main picture */
+    .gbt3__header-air {
+        margin-top: 3rem;
+    }
+}
