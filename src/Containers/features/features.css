@@ -1,0 +1,98 @@
+.gpt3__features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6rem;
+}
+
+.gpt3__features-section__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+/* styling for left content */
+.gpt3__features-section__container__title{
+    width: 50%;
+}
+.gpt3__features-section__container__title h1 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+
+    margin-bottom: 3rem;
+}
+
+.gpt3__features-section__container__title p {
+    color: #FF8A71;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+/* stylinng for right content */
+.gpt3__features-section__container__feature {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+    /* styling for features component from haer */
+.gpt3__features-section__container__feature .gpt3__features-container__feature {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.gpt3__features-section__container__feature .gpt3__features-section__container__feature-content {
+    width: 100%;
+}
+
+.gpt3__features-section__container__feature .gpt3__features-container__feature-title {
+    flex: 1;
+}
+
+
+.gpt3__features-section__container__feature .gpt3__features-container__feature-title h1 {
+    color: #FFFFFF;
+    max-width: 182px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+
+}
+
+.gpt3__features-section__container__feature .gpt3__features-container__feature-title div {
+    margin-bottom: .5rem;
+}
+
+.gpt3__features-section__container__feature .gpt3__features-container__feature-text {
+    flex: 1;
+}
+
+.gpt3__features-section__container__feature .gpt3__features-container__feature-text p {
+    color: #81AFDD;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
