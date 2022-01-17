@@ -1,0 +1,129 @@
+.gpt3__possibility {
+    margin-top: 0;
+}
+
+.gpt3__possibility-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+} 
+
+    /*- styling for left content*/
+.gpt3__possibility-container__picture {
+    flex: 1.5;
+}
+
+.gpt3__possibility-container__picture img {
+    width: 546px;
+    height: 607.53px;
+    margin-left: 5rem;
+}
+
+    /*- styling for right content*/
+.gpt3__possibility-container-content {
+    flex: 1;
+    height: 607.53px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding-right: 8rem;
+}
+
+
+.gpt3__possibility-container-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+
+    margin: 2rem 0;
+    margin-right: 1rem;
+}
+
+.gpt3__possibility-container-content p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-bottom: 2rem;
+}
+
+.gpt3__possibility-container-content a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.gpt3__possibility-container-content a:first-child {
+    color:#71E5FF;
+}
+
+.gpt3__possibility-container-content a:last-child {
+    color: var(--color-subtext);
+}
+
+
+
+/* creat media quires */
+@media screen and (max-width: 1050px ) {
+
+    .gpt3__possibility-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+
+    .gpt3__possibility-container__picture {
+        margin-bottom: 3rem;
+    }
+
+    .gpt3__possibility-container__picture img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+        /*- styling for right content*/
+    .gpt3__possibility-container-content {
+        padding-right: 0;
+    }
+
+    .gpt3__possibility-container-content h1 {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 700px ) {
+    
+    .gpt3__possibility-container-content h1 {
+        margin: 1rem 0;
+    }
+
+    .gpt3__possibility-container-content p {
+        margin: 1rem 0;
+    }
+}
+
+
+@media screen and (max-width: 550px ) {
+
+    .gpt3__possibility-container__picture {
+        margin-bottom: 2rem;
+    }
+
+    .gpt3__possibility-container-content h1 {
+        margin: .5rem 0;
+        font-size: 30px;
+    }
+
+    .gpt3__possibility-container-content p {
+        margin: .5rem 0;
+    }
+}

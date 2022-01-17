@@ -96,3 +96,64 @@
     font-size: 14px;
     line-height: 24px;
 }
+
+
+/** Creat Media querys for all navbar **/
+
+@media screen and (max-width: 1050px) {
+    .gpt3__features-section__container {
+        flex-direction: column;
+    }
+
+    .gpt3__features-section__container__title{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .gpt3__features-section__container__title h1{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .gpt3__features-section__container__feature {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__features {
+        padding: 2rem 4rem;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .gpt3__features {
+        padding: 2rem;
+    }
+
+    .gpt3__features-section__container__title h1{
+        font-size: 30px;
+    }
+
+        /*- styling for features component from haer */
+    .gpt3__features-section__container__feature .gpt3__features-container__feature {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+            /*-- styling for title */
+    .gpt3__features-section__container__feature .gpt3__features-container__feature-title {
+        width: 100%;
+    }
+    .gpt3__features-section__container__feature .gpt3__features-container__feature-title h1 {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}

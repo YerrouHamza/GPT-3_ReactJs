@@ -1,0 +1,52 @@
+.gpt3__article {
+    margin-top: 10rem;
+}
+
+.gpt3__article-content {
+    display: flex;
+    align-items: content;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.gpt3__article-content h1 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+
+/* creat media quires */
+
+@media screen and (max-width: 700px ) {
+
+    .gpt3__article {
+        margin-top: 8rem;
+    }
+
+    .gpt3__article-content h1 {
+        font-size: 45px;
+        line-height: 70px;
+    }  
+}
+
+
+@media screen and (max-width: 550px ) {
+    .gpt3__article {
+        margin-top: 5rem;
+    }
+
+    .gpt3__article-content h1 {
+        font-size: 35px;
+    }
+}

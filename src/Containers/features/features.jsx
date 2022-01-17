@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+/* Get the feature from components */
 import { Feature } from '../../Components/index.js';
 
 
@@ -11,17 +11,17 @@ import './features.css'
 const Features = () => {
 
     /* creat content for features container. */
-    const one_FeatureTitle = 'Improving end distrusts instantly ';
-    const one_FeatureText = 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.';
+    const one_FeatureTitle = 'Improving end distrusts instantly ' ,
+    one_FeatureText = 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.';
 
-    const tow_FeatureTitle = 'Become the tended active';
-    const tow_FeatureText = 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.';
+    const tow_FeatureTitle = 'Become the tended active' ,
+    tow_FeatureText = 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.';
 
-    const true_FeatureTitle = 'Message or am nothing';
-    const true_FeatureText = 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.';
+    const true_FeatureTitle = 'Message or am nothing' ,
+    true_FeatureText = 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.';
 
-    const fore_FeatureTitle = 'Really boy law county';
-    const fore_FeatureText = 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush.';
+    const fore_FeatureTitle = 'Really boy law county' ,
+    fore_FeatureText = 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush.';
 
 
 
