@@ -4,17 +4,21 @@ import React from 'react'
 import './article.css'
 
 
-const Article = () => {
+const Article = ({ imgBlock, titel, date }) => {
     return (
-        <div className='gpt3__article section__maring'>
-            <div className='gpt3__article-content'>
-                <h1 className='gradient__text'>
-                    <span>A lot is happening,</span> 
-                    <span>We are blogging about it.</span>
-                </h1>
+        <div className='gpt3__blog-article'>
+            <div className='gpt3__blog-article__image'>
+                <img src={imgBlock} alt="" />
+            </div>
+
+            <div className='gpt3__blog-article__content'>
+                <p>{date}</p>
+                <h3>{titel}</h3>
+                <p>Read Full Article</p>
             </div>
         </div>
     )
 }
+
 
 export default Article;

@@ -4,11 +4,7 @@ import React from 'react'
 import './brand.css'
 
 /* get the brand's pictures */
-import googleBrand from '../../assets/google-brand.svg';
-import slackBrand from '../../assets/slack-brand.svg';
-import atlassianBrand from '../../assets/atlassian-brand.svg';
-import dropboxBrand from '../../assets/dropbox-brand.svg';
-import shopifyBrand from '../../assets/shopify-brand.svg';
+import { googleBrand, slackBrand, atlassianBrand, dropboxBrand, shopifyBrand } from './imports'
 
 const Brand = () => {
     return (
